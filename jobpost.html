@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Post Form</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+  <h1>Job Post Form</h1>
+  <div class="container">
+    <form action="jobpost.php" method = "post">
+    <!-- <form id="jobPostForm" onsubmit="submitForm(event)"> -->
+      <div class="form-group">
+        <label for="companyName">Company Name:</label>
+        <input type="text" id="companyName" name="companyName" required>
+      </div>
+      <div class="form-group">
+        <label for="companyWebsite">Company Website:</label>
+        <input type="text" id="companyWebsite" name="companyWebsite" required>
+      </div>
+      <div class="form-group">
+        <label for="jobProfile">Job Profile:</label>
+        <input type="text" id="jobProfile" name = "jobProfile" required>
+      </div>
+      <div class="form-group">
+        <label for="package">Package:</label>
+        <input type="text" id="package" name = "package" required>
+      </div>
+      <div class="form-group">
+        <label>Eligible Courses:</label>
+        <div>
+         BCA<input type="checkbox" id="course1" name ="eligibleCourses" value="Course 1">
+         MCA<input type="checkbox" id="course1" name ="eligibleCourses" value="Course 2">
+        </div>
+        <div>
+         B.tech <input type="checkbox" id="course2" name ="eligibleCourses" value="Course 3">
+          M.tech<input type="checkbox" id="course2" name ="eligibleCourses" value="Course 4">
+        </div>
+        <div>
+          B.com<input type="checkbox" id="course3" name ="eligibleCourses" value="Course 5">
+          BBA<input type="checkbox" id="course2" name ="eligibleCourses" value="Course 7">
+          M.com<input type="checkbox" id="course2" name ="eligibleCourses" value="Course 8">
+          MBA<input type="checkbox" id="course2" name ="eligibleCourses" value="Course 9">
+          
+        </div>
+        <!-- Add more checkboxes as needed -->
+      </div>      
+      <div class="form-group">
+        <label for="date">Date:</label>
+        <input type="text" id="date" name ="date" required>
+      </div>
+      <div class="form-group">
+        <label for="venue">Venue:</label>
+        <input type="text" id="venue" name = "venue" required>
+      </div>
+      <div class="form-group">
+        <label for="description">Job Description:</label>
+        <textarea id="description" name = "description" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="selectionProcess">Selection Process:</label>
+        <textarea id="selectionProcess" name ="selectionProcess" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="registrationLink">Registration Link:</label>
+        <input type="text" id="registrationLink" name ="registrationLink" required>
+      </div>
+      <div class="form-group">
+        <label for="jobLocation">Job Location:</label>
+        <input type="text" id="jobLocation" name = "jobLocation" required>
+      </div>
+      <div class="form-group">
+        <label for="contactPerson">Contact Person Name:</label>
+        <input type="text" id="contactPerson" name = "contactPerson" required>
+      </div>
+      <div class="form-group">
+        <label for="lastDate">Last Date of Apply:</label>
+        <input type="text" id="lastDate" name="lastDate" required>
+      </div>
+      <button type="submit" name="save" value="Submit">Post Job</button>
+    </form>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
